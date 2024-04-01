@@ -23,11 +23,11 @@
                 placeholder="Search or jump to..."
               />
             </li>
-            <li class="text-white">Pull requests</li>
-            <li class="text-white">Issues</li>
-            <li class="text-white">Codespaces</li>
-            <li class="text-white">Marketplace</li>
-            <li class="text-white">Explore</li>
+            <li class="text-white cursor-pointer">Pull requests</li>
+            <li class="text-white cursor-pointer">Issues</li>
+            <li class="text-white cursor-pointer">Codespaces</li>
+            <li class="text-white cursor-pointer">Marketplace</li>
+            <li class="text-white cursor-pointer">Explore</li>
           </ul>
 
           <ul class="flex items-center gap-[12px]">
@@ -38,7 +38,7 @@
             </li>
             <li>
               <img
-                class="rounded-full"
+                class="rounded-full profileImg w-[20px]"
                 src="./assets/images/profile.png"
                 alt="smthimg"
               />
@@ -51,33 +51,45 @@
             <nav>
               <div class="ml-[27%]">
                 <ul class="flex items-center gap-[24px]">
-                  <li class="flex items-center gap-[5px] text-white">
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
                     <img
                       src="./assets/images/book open.svg"
                       alt="smthimg"
                     />Overview
                   </li>
 
-                  <li class="flex items-center gap-[5px] text-white">
+                  <li
+                    class="flex items-center gap-[5px] text-white repos cursor-pointer"
+                  >
                     <img
                       src="./assets/images/book.svg"
                       alt="smthimg"
                     />Repositories
-                    <div class="bg-gray-600 px-[8px] rounded-xl"><p id="repos">46</p></div>
+                    <div class="bg-gray-600 px-[8px] rounded-xl">
+                      <p id="repos">46</p>
+                    </div>
                   </li>
 
-                  <li class="flex items-center gap-[5px] text-white">
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
                     <img src="./assets/images/grid.svg" alt="smthimg" />Projects
                   </li>
 
-                  <li class="flex items-center gap-[5px] text-white">
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
                     <img
                       src="./assets/images/package.svg"
                       alt="smthimg"
                     />Packages
                   </li>
 
-                  <li class="flex items-center gap-[5px] text-white">
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
                     <img src="./assets/images/star.svg" alt="smthimg" />Stars
                     <div class="bg-gray-600 px-[8px] rounded-xl"><p>25</p></div>
                   </li>
@@ -114,9 +126,9 @@
             <div class="flex items-center gap-[5px] my-[18px]">
               <img src="./assets/images/users.svg" alt="smthimg" />
               <span class="text-gray-300 followers">30</span>
-              <p class="text-gray-500">followers</p>
+              <a href="./assets/pages/followers.html" class="text-gray-500 followers cursor-pointer">followers</a>
               <span class="text-gray-300 following">1</span>
-              <p class="text-gray-500">following</p>
+              <a href="./assets/pages/following.html" class="text-gray-500">following</a>
             </div>
 
             <div class="flex items-center gap-[5px]">
@@ -149,7 +161,7 @@
           </div>
 
           <div class="intro__right w-[896px]">
-            <div
+            <!-- <div
               class="intro__right--top border border-gray-700 p-[28px] rounded-lg"
             >
               <p class="text-[12px] text-gray-300 font-medium">
@@ -226,10 +238,12 @@
                 ⚡ GitHub Stats
               </p>
               <img src="./assets/images/stats.png" alt="smthimg" />
-            </div>
+            </div> -->
 
             <div class="pinned">
-              <p class="text-gray-400 text-[18px] mt-[20px] mb-[10px]">
+              <p
+                class="text-gray-400 text-[18px] mt-[20px] mb-[10px] cursor-pointer"
+              >
                 Pinned
               </p>
               <div class="card__wrapper flex flex-wrap items-center gap-[16px]">
@@ -342,12 +356,12 @@
           <li class="text-blue-500">Pricing</li>
           <li class="text-blue-500">API</li>
           <li class="text-blue-500">Training</li>
-          <li class="text-blue-500">Blog</li>
+          <li class="text-blue-500">Blog</li> 
           <li class="text-blue-500">About</li>
         </ul>
       </div>
     </footer>
   </body>
-  <script src="./utills.js"></script>
-  <script src="./app.js"></script>
+  <script src="./assets/js/utills.js"></script>
+  <script src="./assets/js/app.js"></script>
 </html>

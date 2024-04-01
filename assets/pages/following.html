@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="bg-[#0D1117]">
+    <!---------- Header Section Start ------------>
+    <header class="bg-[#161B22]">
+      <div class="container mx-auto px-4">
+        <nav class="flex justify-between py-[16px] items-center">
+          <ul class="flex gap-[16px] items-center">
+            <li class="text-white">
+              <img src="../images/GitHub.svg" alt="logo" />
+            </li>
+            <li class="text-white">
+              <input
+                class="bg-black w-[272px] px-[12px] py-[4px] rounded-lg"
+                type="search"
+                placeholder="Search or jump to..."
+              />
+            </li>
+            <li class="text-white cursor-pointer">Pull requests</li>
+            <li class="text-white cursor-pointer">Issues</li>
+            <li class="text-white cursor-pointer">Codespaces</li>
+            <li class="text-white cursor-pointer">Marketplace</li>
+            <li class="text-white cursor-pointer">Explore</li>
+          </ul>
+
+          <ul class="flex items-center gap-[12px]">
+            <li><img src="../images/qo'ng'iroq.svg" alt="smthimg" /></li>
+            <li><img src="../images/plus.svg" alt="smthimg" /></li>
+            <li>
+              <img src="../images/arrowdown filled.svg" alt="smthimg" />
+            </li>
+            <li>
+              <img
+                class="rounded-full profileImg w-[20px]"
+                src="../images/profile.png"
+                alt="smthimg"
+              />
+            </li>
+            <li><img src="../images/arrowdown filled.svg" alt="" /></li>
+          </ul>
+        </nav>
+        <div class="header__bottom py-[16px]">
+          <div class="container">
+            <nav>
+              <div class="ml-[27%]">
+                <ul class="flex items-center gap-[24px]">
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
+                    <img src="../images/book open.svg" alt="smthimg" /><a
+                      href="../../index.html"
+                      >Overview</a
+                    >
+                  </li>
+
+                  <li
+                    class="flex items-center gap-[5px] text-white repos cursor-pointer"
+                  >
+                    <img src="../images/book.svg" alt="smthimg" />Repositories
+                    <div class="bg-gray-600 px-[8px] rounded-xl">
+                      <p id="repos">46</p>
+                    </div>
+                  </li>
+
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
+                    <img src="../images/grid.svg" alt="smthimg" />Projects
+                  </li>
+
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
+                    <img src="../images/package.svg" alt="smthimg" />Packages
+                  </li>
+
+                  <li
+                    class="flex items-center gap-[5px] text-white cursor-pointer"
+                  >
+                    <img src="../images/star.svg" alt="smthimg" />Stars
+                    <div class="bg-gray-600 px-[8px] rounded-xl"><p>25</p></div>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!---------- Header Section End ------------>
+
+    <main>
+      <section id="intro">
+        <div class="container mx-auto px-4 flex gap-[26px]">
+          <div class="intro__left w-[296px]">
+            <img
+              class="rounded-full mainImg mb-[18px]"
+              src="../images/profile (1).png"
+              alt="smthimg"
+            />
+            <h3 class="text-[24px] mainName text-gray-400">
+              Luis Manuel Ariza
+            </h3>
+            <p class="text-[20px] login text-gray-600">luisAriza</p>
+            <button
+              class="my-[18px] w-full bg-[#21262D] rounded-lg text-white h-[32px]"
+            >
+              Edit profile
+            </button>
+            <p class="my-[18px] text-gray-400">
+              I’m a student and Frontend developer. 😎 Let’s Rock!!
+            </p>
+            <div class="flex items-center gap-[5px] my-[18px]">
+              <img src="../images/users.svg" alt="smthimg" />
+              <span class="text-gray-300 followers">30</span>
+              <a href="../pages/followers.html" class="text-gray-500"
+                >followers</a
+              >
+              <span class="text-gray-300 following">1</span>
+              <a href="../pages/following.html" class="text-gray-500"
+                >following</a
+              >
+            </div>
+
+            <div class="flex items-center gap-[5px]">
+              <img src="../images/location.svg" alt="smthimg" />
+              <p class="text-gray-500">Kokand</p>
+            </div>
+
+            <div
+              class="flex items-center gap-[5px] border-b-2 pb-[18px] border-gray-800 my-[18px]"
+            >
+              <img src="../images/link.svg" alt="smthimg" />
+              <p class="text-gray-500 id">luisariza.com</p>
+            </div>
+
+            <p class="text-[22px] text-gray-300">Achievements</p>
+            <div class="flex items-center mb-[18px]">
+              <img src="../images/quickdraw.png" alt="smthimg" />
+              <img src="../images/pull shark.png" alt="smthimg" />
+            </div>
+
+            <div>
+              <button
+                class="border px-[10px] border-green-500 text-green-500 rounded-xl"
+              >
+                Beta
+              </button>
+              <a class="text-blue-500 font-bold" href="#">Send feedback</a>
+            </div>
+            <p class="mt-[10px] text-[14px] text-gray-500">Block or Report</p>
+          </div>
+          <div class="intro__right">
+            <div class="card__wrapper w-[850px]"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="py-[50px] border-t mt-[60px] border-gray-700">
+      <div class="container mx-auto px-4 flex items-center gap-[70px]">
+        <div class="flex items-center gap-[5px]">
+          <img class="w-[25px]" src="../images/GitHub.svg" alt="smthimg" />
+          <p class="text-gray-400">© 2022 GitHub, Inc.</p>
+        </div>
+        <ul class="flex items-center gap-[42px]">
+          <li class="text-blue-500">Terms</li>
+          <li class="text-blue-500">Privacy</li>
+          <li class="text-blue-500">Security</li>
+          <li class="text-blue-500">Status</li>
+          <li class="text-blue-500">Docs</li>
+          <li class="text-blue-500">Contact GitHub</li>
+          <li class="text-blue-500">Pricing</li>
+          <li class="text-blue-500">API</li>
+          <li class="text-blue-500">Training</li>
+          <li class="text-blue-500">Blog</li>
+          <li class="text-blue-500">About</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+  <script src="../js/utills.js"></script>
+  <script src="../js/followers.js"></script>
+</html>

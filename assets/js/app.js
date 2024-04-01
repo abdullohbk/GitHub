@@ -7,6 +7,8 @@ followings = $(".following");
 mainId = $(".id");
 cardWrapper = $(".card__wrapper");
 reposCount = $("#repos");
+profileImg = $(".profileImg");
+repositories = $(".repos");
 
 async function getData() {
   let response = await fetch(baseUrl);
@@ -14,7 +16,7 @@ async function getData() {
 
   let responseRepo = await fetch(result.repos_url);
   let resultRepo = await responseRepo.json();
-  //   console.log(resultRepo);
+  console.log(resultRepo);
 
   resultRepo.slice(0, 4).forEach((el) => {
     let card = document.createElement("div");
@@ -29,7 +31,9 @@ async function getData() {
     card.innerHTML = `
                   <div class="flex items-center gap-[8px]">
                     <img src="./assets/images/book.svg" alt="smthimg" />
-                    <p class="text-blue-500 font-semibold">${el.name}</p>
+                    <p class="text-blue-500 font-semibold cursor-pointer">${
+                      el.name
+                    }</p>
                     <button
                       class="border-2 rounded-xl border-gray-700 text-gray-500 px-2"
                     >
@@ -60,8 +64,15 @@ async function getData() {
   followers.textContent = result.followers;
   followings.textContent = result.following;
   mainId.textContent = result.url;
-    reposCount.textContent =result.public_repos
-  console.log(result);
+  reposCount.textContent = result.public_repos;
+  profileImg.src = result.avatar_url;
+  // console.log(result);
 }
 
 getData();
+
+repositories.addEventListener("click", () => {
+  window.location.href = "./assets/pages/repos.html";
+});
+
+
